@@ -66,48 +66,6 @@
 </head>
 <body>
 
-<!-- <select id="demosMenu">
-  <option selected>Choose Demo</option>
-  <option id="activeSlide">Active section and slide</option>
-  <option id="apple">Apple iPhone demo (animations)</option>
-  <option id="autoHeight">Auto height</option>
-  <option id="autoplayVideoAndAudio">Autoplay Video and Audio</option>
-  <option id="backgrounds">Background images</option>
-  <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
-  <option id="backgroundVideo">Background video</option>
-  <option id="callbacks">Callbacks</option>
-  <option id="continuousHorizontal">Continuous horizontal</option>
-  <option id="continuousVertical">Continuous vertical</option>
-  <option id="parallax">Parallax</option>
-  <option id="css3">CSS3</option>
-  <option id="dragAndMove">Drag And Move</option>
-  <option id="easing">Easing</option>
-  <option id="fadingEffect">Fading Effect</option>
-  <option id="fixedHeaders">Fixed headers</option>
-  <option id="gradientBackgrounds">Gradient backgrounds</option>
-  <option id="interlockedSlides">Interlocked Slides</option>
-  <option id="looping">Looping</option>
-  <option id="methods">Methods</option>
-  <option id="navigationV">Vertical navigation dots</option>
-  <option id="navigationH">Horizontal navigation dots</option>
-  <option id="noAnchor">No anchor links</option>
-  <option id="normalScroll">Normal scrolling</option>
-  <option id="normalScrollElements">Normal scroll elements</option>
-  <option id="offsetSections">Offset sections</option>
-  <option id="oneSection">One single section</option>
-  <option id="resetSliders">Reset sliders</option>
-  <option id="responsiveAutoHeight">Responsive Auto Height</option>
-  <option id="responsiveHeight">Responsive Height</option>
-  <option id="responsiveWidth">Responsive Width</option>
-  <option id="responsiveSlides">Responsive Slides</option>
-  <option id="scrollBar">Scroll bar enabled</option>
-  <option id="scrollHorizontally">Scroll horizontally</option>
-  <option id="scrollOverflow">Scroll inside sections and slides</option>
-  <option id="scrollOverflowReset">ScrollOverflow Reset</option>
-  <option id="lazyLoad">Lazy load</option>
-  <option id="scrollingSpeed">Scrolling speed</option>
-</select>
- -->
 
 <div id="fullpage">
 	<div class="section " id="section0">
@@ -115,19 +73,53 @@
 			<div class="row">
 				<div class="col-6 text-left">
 					<!-- Georgian -->
+
+					<div id="test">
+					    
+
+					    <ul class="lang_selector">
+					    
+					    </ul>	
+					</div>
+                   <style type="text/css">
+                   	  #test{
+                   	  	position: relative;
+                   	  	cursor: pointer;
+                   	  }
+                   	  .lang_selector div{
+                       cursor: pointer;
+                   	  }
+                   	  .lang_selector{
+                   	  	position: absolute;
+                   	  	bottom: -70px;
+                   	  	border: 1px solid;
+                   	  	padding-left: 0px;
+                   	  	margin: 0px;
+                   	  }
+                   </style>
+
 					<form>
-						<select>
-							<option>Georgia</option>
-							<option>English</option>
+						<img class="curent_lang" src="images/georgia.png">
+						<select class="lang_select">
+							<option> Georgia</option>
+							<option><img src="images/georgia.png"> English</option>
 							<option>Lithuanian</option>
 						</select>
 					</form>
 				</div>
+
+
+				<script type="text/javascript">
+					$('.lang_select').change(function(){
+                           $('.curent_lang').attr('src','images/'+ $(this).val()+'.png')
+					})
+
+				</script>
 				<div class="col-6 text-right">
 					<a href="">
                    
 
-					 Log in</a> /<a href=""> authentication</a>
+					 Log in</a> /<a href=""> Registration</a>
 				</div>
 			</div>
 		</div>
@@ -171,7 +163,7 @@
 		</div>
 	</div>
 	<div class="section" id="section1">
-	    
+	    <div  class="conta">
 	    <div class="question">
 	    	რა არის ნემო?
 	    </div>
@@ -197,17 +189,21 @@
 	     <div class="question">
 	    	როგორ მუშაობს ნემო?
 	    </div>
-	    <div class="answer">
+	    <div class="answer last_answer">
 	    	ნემო ტესტური სახისაა-რამდენიმე სავარაუდო ვარიანტს შორის უნდა შეარჩიო ერთი სწორი პასუხი;
 ნემო თითოეულ კითხვას მანამ გაგიმეორებს, სანამ არ დარწმუნდება, რომ დაიმახსოვრე სიტყვის სწორი მნიშვნელობა;
 ტესტზე რამდენჯერმე სწორად გაცემული პასუხის შემთხვევაში, სიტყვა ავტომატურად ჩავარდება შენს „სიტყვების სკივრში“;
 	    </div>
-
+  </div>
 	    <footer>
-	    	
+	    	<ul class="footer_ul list-unstyled d-flex align-content-center justify-content-center">
+	    		<li>Tel : (032) 2 30 61 31</li>
+	    		<li class="mx-3">Mail : info@kings.ge</li>
+	    		<li><a href="www.kings.ge"> www.kings.ge </a></li>
+	    	</ul>
 	    </footer>
 	</div>
-	<!-- <div class="section" id="section2">
+	<!-- <div class="section" id="section2">fd
 		<div class="intro">
 			<h1>Enjoy it</h1>
 		</div>
@@ -220,13 +216,13 @@ $('body').mousemove(function(e){
  var MourPositionX= Math.floor(e.clientX*100/window.innerWidth)  
  var MourPositionY= Math.floor(e.clientY*100/window.innerHeight)  
 
-    console.log(MourPositionX+'%')
+    // console.log(MourPositionX+'%')
     var bb=(50-MourPositionX)/5;
     var YY=-(MourPositionY)/10;
 
     var nnn=50-YY;
 
-    console.log(YY)
+    // console.log(YY)
   $('.big_ban').css({
   	'transform':' translate( '+(bb-50)+'%,-'+nnn+'%)'
   })

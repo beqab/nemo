@@ -13,6 +13,7 @@ input:focus, select:focus{
 	outline: none;
 	box-shadow: none;
 }
+
 #section0{
 	background-color: transparent !important;
 }
@@ -26,6 +27,7 @@ input:focus, select:focus{
 	font-size: 15px;
 
 }
+
 #section1 .question{
 	margin-bottom: 3vh;
   color: #fff;
@@ -262,6 +264,14 @@ opacity: 1;
     color:#30668A;
     transform: translate(-50%,-50%);
 }
+.conta{
+  padding: 0 33px;
+    max-width: 1260px;
+    margin: auto;
+}
+.last_answer{
+  margin-bottom: 12vh !important;
+}
 @media only screen and (max-width: 600px) {
    #section1 .answer {
     font-family: 'Conv_DejaVuSans';
@@ -269,10 +279,96 @@ opacity: 1;
     margin-bottom: 2vh;
     font-size: 10px;
 }
+
+.demoOrNemo span.text-box {
+    width: 155px;
+    background: rgba(206, 224, 135, 0.7);
+    border-radius: 10px;
+
+    }
+.demoOrNemo {
+    max-width: 284px;
+
+    }
+
+.footer_ul {
+    position: relative;
+    max-width: 530px;
+    margin: auto;
+    padding: 9px 0 28px;
+    line-height: 15px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.conta{
+  padding: 0 7px;
+
+}
 #section1 .question {
     margin-bottom: 0vh;
     color: #fff;
     font-family: 'Conv_DejaVuSans';
     font-size: 14px;
 }
+
+#fp-nav.right {
+    right: -2px;
+}
 	}
+
+  #fp-nav ul li .fp-tooltip.right{
+  display: none;
+}
+
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    border: 1px solid #30668a;
+    background: #ff9300;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+
+footer{
+
+
+  position: absolute;
+  bottom: 0px;
+  color: #30668A;
+  font-size: 13px;
+  width: 100%;
+}
+.footer_ul:before{
+     height: 6px;
+    width: 100%;
+    content: '';
+    position: absolute;
+    background: #30668A;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 0px;
+    border-radius: 50px;
+}
+.footer_ul a{
+
+  color: #30668A;
+}
+.footer_ul{
+  position: relative;
+ 
+  max-width: 530px;
+  margin: auto;
+  padding: 20px 0;
+  font-weight: bold;
+}
