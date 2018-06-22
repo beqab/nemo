@@ -348,6 +348,43 @@ header{
   font-size: 13px;
   font-weight: bold;
 }
+
+
+
+.question_test{
+  position: relative;
+}
+
+
+.test_block form label input:checked ~ .checkmark {
+    background-color: blue;
+}
+
+.test_block form label input{
+   display: none;
+}
+.test_block form label{
+          display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+
+}
 @media only screen and (max-width: 600px) {
    #section1 .answer {
     font-family: 'Conv_DejaVuSans';
@@ -395,19 +432,7 @@ header{
     font-family: 'Conv_DejaVuSans';
     font-size: 14px;
 }
-.question_test{
-  position: relative;
-}
-.question_test:after {
-     content: '';
-     position: absolute;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     bottom: 10px;
-     width: calc(100% + 10px)
-     height:3px;
-     background: #30668A;
-}
+
 
 #fp-nav.right {
     right: -2px;
