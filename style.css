@@ -405,6 +405,25 @@ header{
 }
 
 
+.Buy_Nemo:hover{
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hvr-buzz {
+  50% {
+    transform: translate(-46px,-20px) rotate(1deg);
+  }
+  100% {
+    transform: translate(-50px, -20px) rotate(-1deg);
+  }
+}
 
 
 @media only screen and (max-width: 600px) {
