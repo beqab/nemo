@@ -385,6 +385,28 @@ header{
     background-color: #eee;
 
 }
+.letters{
+  
+ 
+  border-right: 3px solid #30668A;;
+}
+.letters_box{
+  position: relative;
+     max-height: 500px;
+      overflow-y: scroll;
+}
+
+.dictation{
+  border: 3px solid #30668A;
+}
+.dictation{
+  min-height: 700px;
+
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
    #section1 .answer {
     font-family: 'Conv_DejaVuSans';
